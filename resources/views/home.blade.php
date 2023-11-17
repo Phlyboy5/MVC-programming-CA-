@@ -48,13 +48,13 @@
     <form action="/register" method="POST">
       @csrf
       <label for="name" class="form-label">Name : </label>
-      <input name="name" type="text" placeholder="name" >
+      <input name="name" type="text" placeholder="name" required="">
       <div>
       <label for="email" class="form-label">Email : </label>
-      <input name="email" type="text" placeholder="email">
+      <input name="email" type="text" placeholder="email"required="">
       </div>
       <label for="password" class="form-label">Password : </label>
-      <input name="password" type="password" placeholder="password">
+      <input name="password" type="password" placeholder="password" required="">
       
       <button class="btn btn-primary">Register</button>
       
@@ -66,9 +66,9 @@
     <form action="/login" method="POST">
       @csrf
       <label for="name" class="form-label">Name : </label>
-      <input name="loginname" type="text" placeholder="name">
-      <label for="password" class="form-label">Password : </label>
-      <input name="loginpassword" type="password" placeholder="password">
+      <input name="loginname" type="text" placeholder="name" required="">
+      <label for="password" class="form-label" >Password : </label>
+      <input name="loginpassword" type="password" placeholder="password" required="">
       <button class="btn btn-primary">Log in</button>
     </form>
   </div>
